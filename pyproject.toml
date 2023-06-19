@@ -8,6 +8,8 @@ packages = [{include = "yuidoc2"}]
 
 [tool.poetry.dependencies]
 python = "^3.8"
+mkdocs = "^1.4.3"
+mkdocs-material = "^9.1.16"
 
 
 [build-system]
