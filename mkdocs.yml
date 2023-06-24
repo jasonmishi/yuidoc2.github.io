@@ -1,4 +1,6 @@
-site_name: My Docs
+site_name: yuidoc2
+repo_url: https://github.com/jasonmishi/yuidoc2
+repo_name: jasonmishi/yuidoc2
 
 theme:
   name: material
