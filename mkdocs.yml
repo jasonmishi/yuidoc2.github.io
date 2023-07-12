@@ -4,6 +4,7 @@ repo_name: jasonmishi/yuidoc2
 
 theme:
   name: material
+  favicon: images/favicon.ico
 
   palette: 
     # Palette toggle for light mode
