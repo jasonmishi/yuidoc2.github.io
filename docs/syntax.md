@@ -1171,7 +1171,7 @@ render: function () {
 </tr>
 </table>
 
-<h2 id="comment-styles">Comment Styles</h2>
+## Comment Styles
 <p>
   The comment blocks can start with any amount of whitespace, and
   optionally one or more asterisks. Valid examples include:
@@ -1209,7 +1209,7 @@ Description
 ```
 </p>
 
-<h2>Extra formatting</h2>
+## Extra formatting
 
 <p>
     YUIDoc supports 3 main forms of formatting your documentation. HTML,
@@ -1233,7 +1233,7 @@ Description
 </tr>
 </table>
 
-<h3>Markdown and Code Highlighting</h3>
+### Markdown and Code Highlighting
 
 <p>
 Inside any documentation block you may use Markdown or Selleck based markup. If you indent your code snippets,
@@ -1274,7 +1274,7 @@ This would render as:
 ```
 </div>
 
-<h3>Cross-referencing Modules and Classes</h3>
+### Cross-referencing Modules and Classes
 
 <p>YUIDoc also includes a Handlebars <code>blockHelper</code> that enables you to
 easily cross-reference classes and modules. It uses this pattern:
@@ -1331,7 +1331,7 @@ You can also call <code>crossLinkRaw</code> to return only the HREF portion of t
 yourself.
 </p>
 
-<h3>Using custom Handlebars block helpers</h3>
+### Using custom Handlebars block helpers
 
 <p>
 You can tell <code>YUIDoc</code> to include custom <code>Y.Handlebars</code> helpers with the <code>-H</code> or <code>--helpers</code> command line arguments
