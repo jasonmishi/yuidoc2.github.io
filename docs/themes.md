@@ -1,12 +1,13 @@
 # Themes
 
-YUIDoc uses <a href="http://handlebarsjs.com/">Handlebars.js</a> to render its templates. 
-For easy customization, YUIDoc's default templates provide a specific set of file overrides.
+YUIDoc uses [Handlebars.js](http://handlebarsjs.com/) to render its templates.
+For easy customization, YUIDoc's default templates provide a specific set of
+file overrides.
 
 ## Directories
 
-The default theme consists of `assets/`, `layouts/` and `partials/` directories, 
-along with a `theme.json` file that describes theme-related variables, 
+The default theme consists of `assets/`, `layouts/` and `partials/` directories,
+along with a `theme.json` file that describes theme-related variables,
 such as the JS and CSS to load.
 
 ``` sh
@@ -29,7 +30,7 @@ A YUIDoc template has two primary layout files: `main.handlebars` and `xhr.handl
 <tr>
     <th><code>main</code></th>
     <td>
-        Provides a complete wrapper around every rendered page. 
+        Provides a complete wrapper around every rendered page.
         <code>main.handlebars</code> includes the full HTML header and footer markup, CSS, and JS
         for every YUIDoc API page.
     </td>
@@ -37,7 +38,7 @@ A YUIDoc template has two primary layout files: `main.handlebars` and `xhr.handl
 <tr>
     <th><code>xhr</code></th>
     <td>
-        Provides a smaller layout for the built-in doc server to use when requesting an individual page via XHR. 
+        Provides a smaller layout for the built-in doc server to use when requesting an individual page via XHR.
         This enables the browser to refresh just the content pane and avoid loading the complete  markup for the entire page.
         The <code>xhr</code> template enables YUIDoc to progressively enhance the API documentation in an efficient manner.
     </td>
@@ -46,10 +47,8 @@ A YUIDoc template has two primary layout files: `main.handlebars` and `xhr.handl
 
 ### Partials
 
-<p>
-    For each section of the layout that derives from parsed YUIDoc comment data, 
-    YUIDoc provides a Handlebars partial. 
-</p>
+For each section of the layout that derives from parsed YUIDoc comment data,
+YUIDoc provides a Handlebars partial.
 
 <table>
 <tr>
@@ -94,18 +93,18 @@ A YUIDoc template has two primary layout files: `main.handlebars` and `xhr.handl
 </tr>
 </table>
 
-
 ## Overriding a Partial/Layout
 
-YUIDoc's `--themedir` option specifies a directory containing 
+YUIDoc's `--themedir` option specifies a directory containing
 layouts and partials that override the default theme. For example:
 
 ```terminal
-$ yuidoc --themedir ./mytheme
+yuidoc --themedir ./mytheme
 ```
 
 causes YUIDoc to inspect the directory `./mytheme` for template overrides.
 If this directory contains an override such as `./mytheme/partials/method.handlebars`,
-YUI will parse its internal templates first, then apply the custom `method.handlebars` partial.
-If a theme has no explicit override for a given template file, 
+YUI will parse its internal templates first, then apply the custom
+`method.handlebars` partial.
+If a theme has no explicit override for a given template file,
 YUIDoc simply falls back to using the default layout or partial.
