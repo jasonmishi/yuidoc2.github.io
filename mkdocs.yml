@@ -2,12 +2,17 @@ site_name: yuidoc2
 repo_url: https://github.com/jasonmishi/yuidoc2
 repo_name: jasonmishi/yuidoc2
 
+markdown_extensions:
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.superfences
+
 theme:
   name: material
   favicon: assets/favicon.ico
   logo: assets/logo.png
 
-  palette: 
+  palette:
     # Palette toggle for light mode
     - media: "(prefers-color-scheme: light)"
       scheme: default
