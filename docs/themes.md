@@ -44,7 +44,7 @@ A YUIDoc template has two primary layout files: `main.handlebars` and `xhr.handl
 </tr>
 </table>
 
-<h3>Partials</h3>
+### Partials
 
 <p>
     For each section of the layout that derives from parsed YUIDoc comment data, 
