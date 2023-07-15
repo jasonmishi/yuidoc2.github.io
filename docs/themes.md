@@ -9,16 +9,16 @@ The default theme consists of `assets/`, `layouts/` and `partials/` directories,
 along with a `theme.json` file that describes theme-related variables, 
 such as the JS and CSS to load.
 
-```terminal
-
-themes/
-    default/
-        assets/             //Project assets, css, js
-        layouts/
-            *.handlebars    //Handlebars files for layouts
-        partials/
-            *.handlebars    //Handlebars files for partials
-        theme.json   //JSON file with theme variables
+``` sh
+.
+└─ themes/
+   └─ default/
+      ├─ assets/                # Project assets, css, js
+      ├─ layouts/
+      │  └─ *.handlebars        # Handlebars files for layouts
+      ├─ partials/
+      │  └─ *.handlebars        # Handlebars files for partials
+      └─ theme.json             # JSON file with theme variables
 ```
 
 ### Layouts
